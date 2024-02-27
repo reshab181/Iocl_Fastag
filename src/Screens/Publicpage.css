@@ -1,0 +1,136 @@
+/* Publicpage.css */
+
+/* Main container styling */
+.sections {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    background-color: #f0f0f0; /* Light gray background */
+}
+
+/* Form container styling */
+.form-public {
+    /* width: 50%; */
+    padding: 30px;
+    background-color: #fff; /* White background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Form element styling */
+.form-public > div {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold; /* Bold label text */
+}
+
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s; /* Smooth transition for input border */
+}
+input[type="file"]{
+    /* width: calc(100% - 20px); */
+    padding: 12px;
+    /* border: 1px solid #ccc; */
+    /* border-radius: 6px; */
+    font-size: 16px;
+    transition: border-color 0.3s;   
+}
+
+input[type="text"]:focus, input[type="file"]:focus {
+    outline: none;
+    border-color: #007bff; /* Blue border color on focus */
+}
+
+/* Submit button styling */
+.submit {
+    padding: 12px 24px;
+    background-color: #007bff; /* Blue button background */
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s; /* Smooth transition for button background */
+}
+
+.submit:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Button positioning */
+.submit[type="button"] {
+    margin-left: 10px;
+}
+
+.submit[type="submit"] {
+    margin-left: auto; /* Align submit button to the right */
+    display: block; /* Make the button a block element for full width */
+}
+
+/* Row container styling */
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Input group styling */
+.input-group {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.input-group label {
+    margin-bottom: 10px;
+}
+
+.input-group input {
+    width: calc(100% - 10px); /* Adjust input width for 2 inputs in a row */
+}
+
+/* Loader styling */
+.loader-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    z-index: 9999; /* Ensure the loader appears on top of other content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+}
+
+.form-public {
+    position: relative; /* Ensure the form is positioned relative to its container */
+    z-index: 1; /* Ensure the form appears above the loader */
+}
+
+
+/* Define animation keyframes */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+

@@ -1,0 +1,106 @@
+/* login.css */
+
+/* Container Styles */
+.login-container {
+    width: 35vw;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading Styles */
+  .login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Label Styles */
+  .login-container label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: bold;
+  }
+  
+  /* Input Styles */
+  .login-container input[type="email"],
+  .login-container input[type="password"] {
+    width: 90%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    font-size: 16px;
+  }
+  
+  /* Button Styles */
+  .login-container button {
+    width: 10vw;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+  }
+  
+  .login-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Error Message Styles */
+  .error-message {
+    color: red;
+    margin-top: 8px;
+    font-size: 14px;
+  }
+  
+  /* Additional Styling */
+  .login-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .login-container:before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    z-index: -1;
+    transition: all 0.3s ease;
+  }
+  
+  .login-container:hover:before {
+    top: 0;
+    left: 0;
+  }
+  
+  .login-container h2 {
+    text-transform: uppercase;
+  }
+  
+  .login-container label,
+  .login-container input[type="email"],
+  .login-container input[type="password"],
+  .login-container button {
+    transition: all 0.3s ease;
+  }
+  
+  .login-container:hover label,
+  .login-container:hover input[type="email"],
+  .login-container:hover input[type="password"],
+  .login-container:hover button {
+    opacity: 0.8;
+  }
+  
